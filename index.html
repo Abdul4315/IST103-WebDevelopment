@@ -46,21 +46,35 @@
 			</div>
 			<div class="form-example">
 				<label for="where to live"> Where to live: </label>
-				<input type="range" id="wtl" name="wtl" min="BC" max="100"/>
+				<select>
+					<option value="bc">BC</option>
+					<option value="ab">AB</option>
+					<option value="on">ON</option>
+				</select>
 			</div>
 			<div class="form-example">
 				<label for="vehicle"> Vehicle: </label>
-				<input type="text" name="vehicle" id="vehicle" required>
-			</div>
+				<input type="text" list="vehicle" name="vehicle"/>
+				<datalist id="vehicle">
+					<option value="honda">Honda</option>
+					<option value="huyndai">Huyndai</option>
+					<option value="ford">Ford</option>
+				</datalist>
+			</div>	
 			<div class="form-example">
 				<label for="country code"> Country code: </label>
+				<input type="text" name="cuntry_code" id="country_code" placeholder="Input 3 characters">  
 			</div>
-			
 			<div class="form-example">
 				<input type="submit" value="Register">
 			</div>
 		</form>
 		<hr>
+		<pre>
+			Life is a journey.
+			Cross the rivers, climb the peaks.
+			But first check for texts.
+		</pre>
 		
 		<hr>
 			<a href="index1.html"> Open new Webpage</a>
